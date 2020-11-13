@@ -1,0 +1,14 @@
+.userDetail {
+    text-align: center;
+    margin: 10px;
+    margin-top: 15px;
+    padding: 5px;
+    color: #f460db;
+    box-shadow: 2px 2px 7px lightgray;   
+}
+.comments {
+    text-align: center;
+}
+.comments > h3 {
+    color: #f460db;
+}
