@@ -13,8 +13,8 @@ import Home from './components/Home/Home';
 function App() {
   return (
     <div>
-      <Header/>
       <Router>
+        <Header/>
         <Switch>
           <Route path="/home">
             <Home/>

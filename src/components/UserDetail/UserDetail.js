@@ -37,7 +37,7 @@ const UserDetail = () => {
                     comments.map(comment => <Comment 
                         comment = {comment}
                         key = {comment.id}
-                        ></Comment>)
+                    ></Comment>)
                 }
             </div>
         </div>

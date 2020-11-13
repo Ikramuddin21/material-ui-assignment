@@ -1,15 +1,13 @@
 import React from 'react';
-// import image from '../../fakeData';
 import './Comment.css';
 
 const Comment = (props) => {
-    // const [images, setImages] = useState([]);
     const {email, body} = props.comment;
 
     return (
         <div className="comment">
             <div>
-                {/* <img src="" alt=""/> */}
+                {/* image area */}
             </div>
             <div>
                 <p>Email : {email}</p>
