@@ -5,6 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
 import './User.css';
+import { Button, CardActions } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -26,6 +27,7 @@ const useStyles = makeStyles({
 const User = (props) => {
     const {id, title} = props.user;
     const classes = useStyles();
+
     return (
         <div className="user">
             <Card className={classes.root} variant="outlined">
@@ -38,7 +40,11 @@ const User = (props) => {
                       Title: {title}
                     </Typography>
                 </CardContent>
-                <Link to={"/user/"+id}><button>See More</button></Link>
+                <CardActions>
+                  <Link to={"/user/"+id} className="user_link">
+                    <Button size="small">See More</Button>
+                  </Link>
+                </CardActions>
             </Card>
         </div>
     );

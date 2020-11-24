@@ -7,6 +7,8 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import { Link } from 'react-router-dom';
+import './Header.css';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -78,7 +80,7 @@ const Header = () => {
                     <MenuIcon />
                 </IconButton>
                 <Typography className={classes.title} variant="h6" noWrap>
-                    User-List
+                    <Link to="/" className="header_link">User-List</Link>
                 </Typography>
                 <div className={classes.search}>
                     <div className={classes.searchIcon}>

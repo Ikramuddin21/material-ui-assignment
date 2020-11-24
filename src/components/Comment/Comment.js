@@ -2,14 +2,14 @@ import React from 'react';
 import './Comment.css';
 
 const Comment = (props) => {
-    const {email, body} = props.comment;
-
+    const {id, email, body} = props.comment;
     return (
         <div className="comment">
-            <div>
-                {/* image area */}
+            <div className="comment_image">
+                <img src={`https://picsum.photos/120/120?=${id}`} alt=""/>
             </div>
-            <div>
+            
+            <div className="comment_info">
                 <p>Email : {email}</p>
                 <p>Comment : {body}</p>
             </div>

@@ -13,9 +13,7 @@ const UserDetail = () => {
         fetch(`https://jsonplaceholder.typicode.com/posts/${userId}`)
         .then(res => res.json())
         .then(data => setSingleUser(data));
-    }, []);
 
-    useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/comments?postId=${userId}`)
         .then(res => res.json())
         .then(data => setComments(data));
@@ -31,6 +29,7 @@ const UserDetail = () => {
                 <h3>Title : {title}</h3>
                 <h3>Body : {body}</h3>
             </div>
+            
             <div className="comments">
                 <h3>See Comments</h3>
                 {
